@@ -1,0 +1,52 @@
+########################grid search#########################################
+imdb_injected:
+  lr: 0.0001
+  sfga:
+    emb_dim: 128
+    alpha: 0.9
+    beta: 0.5
+    decolayer: 2
+    inner_epochs: 10
+  dataset:
+    sparse: False
+  gnn:
+    hidden_dim: 128
+
+freebase_injected:
+  lr: 0.001
+  sfga:
+    emb_dim: 8
+    alpha: 0.4
+    beta: 0.3
+    decolayer: 3
+    inner_epochs: 10
+  dataset:
+    sparse: False
+  gnn:
+    hidden_dim: 128
+
+amazon_fraud:
+  lr: 0.01
+  sfga:
+    emb_dim: 8
+    alpha: 0.4
+    beta: 0.7
+    decolayer: 3
+    inner_epochs: 10
+  dataset:
+    sparse: False
+  gnn:
+    hidden_dim: 128
+
+yelpchi_fraud:
+  lr: 0.0001
+  sfga:
+    emb_dim: 64
+    alpha: 0.9
+    beta: 0.2
+    decolayer: 4
+    inner_epochs: 10
+  dataset:
+    sparse: False
+  gnn:
+    hidden_dim: 512
